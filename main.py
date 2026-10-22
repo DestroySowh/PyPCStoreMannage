@@ -2,6 +2,7 @@ from tkinter import *
 from PIL import Image, ImageTk
 from ManageFunk import MenuButtonFunkClass
 
+# ... дальше твои переменные
 # Перемменые Свойств TK:
 rootBG = 'black'
 # Переменные для всех FrameTopMenu
@@ -27,7 +28,7 @@ LabelMainBottomFont =('Times New Romans',18, 'italic')
 # Основа приложения
 root = Tk()
 root.resizable(width=False, height=False)
-root.geometry("1000x600")
+root.geometry("1000x700")
 root.iconbitmap('Images/icon.ico')
 root.title('Менеджемент CompStore')
 root.config(background=rootBG)
@@ -40,7 +41,7 @@ FrameTopMenu.configure(background=FrameTopMenuBg)
 FrameTopMenu.place(relwidth=1, relheight=0.12, x=0, y=0)
 
 # Лого в меню
-pil_logo = Image.open("Images/logo.jpg").resize((64, 64))
+pil_logo = Image.open("Images/logo.jpg").resize((70, 70))
 Logo = ImageTk.PhotoImage(pil_logo)
 LogoLabel = Label(FrameTopMenu, image=Logo, borderwidth=0)
 ## Реализация
